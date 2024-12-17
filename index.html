@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css"
+    />
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-CSTHH2rc.js">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CGrrHQ_q.css">
+  </head>
+  <body>
+    <header>
+      <form id="search-form">
+        <input
+          type="text"
+          name="query"
+          placeholder="Search images..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <main>
+      <p id="loading-message" class="hidden">Loading images, please wait...</p>
+      <ul id="gallery" class="gallery"></ul>
+      <button id="load-more" class="hidden">Load more</button>
+    </main>
+  </body>
+</html>
